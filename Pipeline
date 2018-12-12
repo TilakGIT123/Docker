@@ -1,11 +1,11 @@
 pipeline{
     agent{
-        docker {image 'Node11'}
+        docker {image 'centos'}
     }
     stages{
         stage('Test'){
            steps {
-               sh 'Node11 --version'
+               sh 'node --version'
                }
                }
                }
